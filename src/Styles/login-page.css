@@ -1,0 +1,25 @@
+.login-underline{
+    min-height: 0.3rem;
+    min-width: 3rem;
+    max-width: 3rem;
+    max-height: 0.3rem;
+    background-color: black;
+    display: inline-block;
+    border-radius: 1rem;
+}
+
+.login-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}   
+
+.username-input, .password-input{
+    margin-top: 1rem;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+}

@@ -1,0 +1,15 @@
+.middleIcon{
+    min-width: 30%;
+    min-height: 30%;
+    
+    transition: 0.5s all ease;
+
+}
+
+.middleIcon-login{
+    transform: rotateZ(180deg);
+}
+
+.middleIcon-signup{
+    transform: rotateZ(-180deg);
+}
