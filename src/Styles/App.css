@@ -2,7 +2,7 @@
     max-width: 60vw;
     max-height: 60vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     border: 1px solid black;
     overflow: hidden;
     border-radius: 5px;
@@ -13,10 +13,19 @@
     transition:all 0.5s ease;
 }
 
+.login-page{
+    opacity: 1;
+    transform: translateX(50%);
+}
+
+.signup-page{
+    opacity: 1;
+    transform: translateX(-50%);
+}
 
 .login-hide{
     opacity: 0;
-    transform: translateX(-200%);
+    transform: translateX(-100%);
 }
 
 .signup-hide{
@@ -24,41 +33,36 @@
     transform: translateX(100%);
 }
 
+
 /*SMALL SCREEN SIZES*/
 
 @media (max-width: 768px) { 
     .main-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
         min-width: 90vw;
         min-height: 90vh;
-        overflow: scroll;
-        display: grid;
+    }
+    .login-page{
+        transform: translateX(10%);
     }
     .signup-page{
-        transform: translateY(-100%);
-    }
-    .signup-hide{
-        transform: translateX(100%);
-    }
-    .middleIcon{
-        display: none;
+        transform: translateX(-100%);
     }
 }
 
 /* Medium Screen */
 @media (max-width: 900px) {
-    .login-page, .signup-page{
-        max-width: 25vw;
-    }
-
-   
-    .middleIcon{
-        max-width: 20%;
-        max-height: 20%;
-    }
+    
 
     .main-container{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+    }
+
+    .login-page{
+        transform: translateX(10%);
     }
 }
